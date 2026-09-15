@@ -87,6 +87,7 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the portfolio architecture 
 ```text
 .
 ├── demo/                       # Browser-based mock dashboard
+├── scripts/demo-server.js      # Dependency-free Node.js demo server
 ├── src/core/                   # Sanitized decision and source-health logic
 ├── src/data/                   # Mock vacancies only
 ├── tests/                      # Executable business-rule tests
@@ -98,16 +99,27 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the portfolio architecture 
 
 ## Run the showcase locally
 
-No third-party packages are required.
+You only need Node.js. No third-party packages or Python are required.
 
 ```bash
 npm test
 npm run demo
 ```
 
-Then open `http://localhost:8080/demo/`.
+On Windows PowerShell, if `npm.ps1` is blocked by execution policy, use:
 
-If Python is not installed, any static web server can serve the repository root.
+```powershell
+npm.cmd test
+npm.cmd run demo
+```
+
+The demo server will print:
+
+```text
+Demo server running at http://localhost:4173/demo/
+```
+
+Keep the terminal running and open `http://localhost:4173/demo/` in your browser.
 
 ## Business Analyst artefacts
 
