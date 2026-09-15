@@ -1,0 +1,43 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Node / tooling
+node_modules/
+coverage/
+.DS_Store
+.vscode/
+.idea/
+
+# Production/private exports
+private/
+exports/
+resumes/
+applications/
+contacts/
+*.docx
+*.pdf
+*.xlsx
+*.csv
+
+# Local databases and logs
+*.db
+*.sqlite
+*.log
+
+# Deployment / framework state
+.vercel/
+.next/
+.cache/
+
+# Credential/config files commonly created by tooling
+.npmrc
+.netrc
+credentials*.json
+client_secret*.json
+service-account*.json
