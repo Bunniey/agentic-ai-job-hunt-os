@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "demo": "python3 -m http.server 8080"
+    "demo": "node scripts/demo-server.js"
   },
   "license": "MIT"
 }
